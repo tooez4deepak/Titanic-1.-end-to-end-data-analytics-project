@@ -1,0 +1,9 @@
+# Calculate the mean of the Age column
+age_mean = df['Age'].mean()
+
+# Replace missing values in the Age column with the mean
+df['Age'].fillna(age_mean, inplace=True)
+
+# Verify that there are no missing values in the Age column
+print("\nNumber of Missing Values in Age column:")
+print(df['Age'].isnull().sum())
