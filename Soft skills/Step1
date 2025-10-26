@@ -1,0 +1,34 @@
+##Step 1. Kick-off meeting with management
+
+Imagine you work for a company that builds ships and wants to investigate the Titanic tragedy to improve their designs. They aim to ensure that in emergencies, all passengers, regardless of class and age, have equal access to emergency exits and equipment. The team suspects that higher-class passengers on the Titanic had higher survival chances, and wants you to visualize the data to verify this suspicion.
+
+M: Hey Alex! How are you?
+
+A: Hey! I am fine you?
+
+...little chat
+
+M: Titanic tragedy...
+
+M: So we are trying to understand whether there was a problem with how cabins on Titanic were built. To understand that we would like to see if survival rate has anything to do with passenger class.
+
+A: Am I understanding correctly, your goal is to see which passenger class had how many people survived? And you would like to see if there is any difference among the passenger classes in terms of survival rate?
+
+M: Yes, you are correct.
+
+A: Ok, would that be ok if we show a bar plot where you would have all the
+classes on the X-axis and the number of people who survived on the Y-axis? Also, we add another bar plot, where we show the survival rate in % for each of the passenger classes.
+
+M: Yes, that would be great.
+
+A: Would you like to have any filters on the data? For example, would you like to be able to filter data by age? This might help you understand if the difference between classes grows or shrinks for older people or children, who might be more vulnerable.
+
+M: Yes, please. This makes sense.
+
+Ohh, one more thing. Let us also have one more visual for different age categories, so I can clearly see the difference. Children, adults, and seniors. We would like to see that to have a broader picture on the survival rates, since age is certainly a factor.
+
+A: Ok, how would we define these categories? Which age are children, which are adults, and which are seniors?
+
+M: Please, you figure that out and suggest it during the next meeting.
+
+A: Ok, let us quickly document the task.
