@@ -1,0 +1,34 @@
+##Step 2. Documenting a task during a meeting
+
+###Meeting documentation template
+
+**Goal**: See if survival rate had anything to do with the passanger class Also, assess the age of the passangers within each class to identify vulnerable age categories.
+
+**Visualisation**
+(bar, pie, column etc.):
+
+<figure>
+  <left>
+    <img src='https://drive.google.com/uc?export=view&id=15fIbp6qRXgfL6vHfpkPkIG4zCv15qxiD' width='400'/>
+    <figcaption>Popular types of visuals</figcaption>
+  </left>
+</figure>
+
+- Bar plot 1
+  - Numeric column and aggregation (sum, percentage etc.):
+  Survived - sum
+  - Categorical column: Pclass
+  - Active filters: Age
+
+- Bar plot 2
+  - Numeric column and aggregation (sum, percentage etc.):
+  Survived - percentage
+  - Categorical column: Pclass
+  - Active filters: Age
+
+- Bar plot 3
+  - Numeric column and aggregation (sum, percentage etc.):
+  Survived - sum
+  - Categorical column 1: Pclass
+  - Categorical column 2: Age (Children, Adult, Seniors)
+  - Active filters: None
