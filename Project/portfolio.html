@@ -1,0 +1,110 @@
+#@title Project
+import requests
+from IPython.display import Image, display
+from IPython.display import HTML
+
+# Direct image URL
+image_url = "https://drive.google.com/uc?export=view&id=15mSHtYLHjSuCSPd2hAn7_wMFNhyfGHb3"
+
+# Download the image
+response = requests.get(image_url)
+with open('image.jpg', 'wb') as file:
+    file.write(response.content)
+
+import base64
+
+# Convert the image to a base64 string
+with open("image.jpg", "rb") as image_file:
+    encoded_string = base64.b64encode(image_file.read()).decode()
+
+# Create the HTML code with the base64 image
+html_code = f"""
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Header</title>
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }}
+        .header {{
+            display: flex;
+            align-items: flex-start; /* Align items to the top */
+            /*align-items: center;*/
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-bottom: 2px solid #ccc;
+        }}
+        .header img {{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+            box-shadow: 0 0 20px #86e3dd; /* Glowing effect */
+            vertical-align: top;
+        }}
+        .header .text-container {{
+            display: flex;
+            flex-direction: column;
+        }}
+        .header h1 {{
+            margin: 0;
+            font-size: 2em;
+        }}
+        .header p {{
+            margin: 5px 0 0 0;
+            font-size: 1em;
+            color: #666;
+        }}
+        .header .social-icons {{
+            margin-top: 10px;
+        }}
+        .header .social-icons a {{
+            margin-right: 10px;
+            color: #666;
+            text-decoration: none;
+            font-size: 1.5em;
+        }}
+        .header .social-icons a:hover {{
+            color: #000;
+        }}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="data:image/jpeg;base64,{encoded_string}" alt="Profile Picture">
+        <div class="text-container">
+
+
+            <h1>Titanic I — end-to-end data analytics project</h1>
+            <p>Level: Beginner</p>
+            <p>#soft_skills #sql #python #tableau #power_bi</p>
+            &nbsp;
+            <p>Deepak</p>
+
+            <div class="social-icons">
+
+
+
+
+                <a href="https://www.linkedin.com/in/deepakpal18/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:28deepakpal2838@gmail.com"><i class="fas fa-envelope"></i>
+
+
+
+            </div>
+        </div>
+    </header>
+</body>
+</html>
+"""
+
+# Display the HTML code in the Jupyter/Colab notebook
+display(HTML(html_code))
