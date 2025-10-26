@@ -1,0 +1,31 @@
+#@title Step 1. Ask a data engeneer to prepare the data for you
+
+import pandas as pd
+import gdown
+
+# File ID from the Google Drive link
+file_id = '15cFsnPnHc7KlzV0C9QQ5wG5v8PWqJ65C'
+
+download_url = f'https://drive.google.com/uc?id={file_id}'
+
+# Download the file
+output_file = 'downloaded_file.csv'
+gdown.download(download_url, output_file, quiet=False)
+
+# Load the CSV file into a pandas DataFrame
+df = pd.read_csv(output_file)
+
+# Assuming ipython-sql is installed
+%load_ext sql
+
+# Use a file-based SQLite database
+database_filename = 'my_database.db'
+df.to_sql('titanic_data', f'sqlite:///{database_filename}', if_exists='replace', index=False)
+
+# Now connect ipython-sql to the same file-based database
+%sql sqlite:///my_database.db
+
+# ATTENTION: After this tutorial was published,
+#there was a change behind the SQL functionality used here in Jupyter Notebook.
+#We need to add this code to fix it. Without it, the whole thing won't work
+%config SqlMagic.style = '_DEPRECATED_DEFAULT'
