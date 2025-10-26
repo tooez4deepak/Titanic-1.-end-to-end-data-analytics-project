@@ -1,0 +1,23 @@
+[Link Tableau](https://public.tableau.com/views/Titanic1_TableauDashboard_17613071779990/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+**Goal**: See if survival rate had anything to do with the passanger class Also, assess the age of the passangers within each class to identify vulnerable age categories.
+
+**Assessment**: Here’s a **concise and professional rewrite** of your entire paragraph, suitable for use in an assessment or presentation:
+
+---
+
+### Titanic Survival Rate Dashboard Analysis
+
+This dashboard analyzes the survival rates of Titanic passengers to help shipbuilding companies design vessels that minimize disparities between passenger classes and age groups.
+
+The Tableau dashboard contains four charts—one pie chart and three bar charts—illustrating different aspects of passenger survival. The chart displays overall survival and survival percentage, revealing that first-class passengers had the highest survival rate, followed by second class, with third class showing the lowest rate.
+
+The age group analysis highlights that children had the greatest chance of survival across all classes. In second class, all children survived, while first-class children had an 80% survival rate, and only 40% of third-class children survived. Senior passengers had the lowest survival rates overall, with none surviving in second class.
+
+The histogram of age distribution confirms that most survivors were young adults.
+
+This analysis provides valuable insights into how survival rates varied by class and age, emphasizing the need for future ship designs to ensure more equitable safety measures for all passengers. With additional time, this dashboard could be expanded to include more detailed insights and interactive features.
+
+---
+
+Would you like me to make it sound **more like a spoken presentation script** (e.g., for explaining during a viva or demo), or keep it as a **written report summary**?
