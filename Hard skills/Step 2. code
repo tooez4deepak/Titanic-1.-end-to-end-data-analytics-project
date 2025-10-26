@@ -1,0 +1,3 @@
+#@title Step 2. SQL — Query the data
+# Query the data to see if it works
+project_data = %sql SELECT Survived, pclass, age FROM titanic_data;
