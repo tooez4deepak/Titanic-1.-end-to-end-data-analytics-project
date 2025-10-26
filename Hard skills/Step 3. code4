@@ -1,0 +1,6 @@
+# round the value in the Age column
+df['Age'] = df['Age'].round()
+
+# Display summary statistics
+print("\nSummary Statistice:")
+print(df.describe())
