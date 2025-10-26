@@ -1,0 +1,6 @@
+#@title Step 3. Python
+
+# Get the data to Python environment
+df = pd.DataFrame(project_data)
+
+print(df.head(10))
