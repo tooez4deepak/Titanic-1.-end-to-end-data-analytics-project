@@ -1,0 +1,11 @@
+# Display basic information
+print("Basic Information:")
+print(df.info())
+
+# Display summary statistic.
+print("\nSummary Statistics:")
+print(df.describe())
+
+# Display number of missing vatues in each cotumn
+print("\nNumber of Missing Values:")
+print(df.isnull().sum())
